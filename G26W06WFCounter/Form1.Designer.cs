@@ -38,19 +38,21 @@
             button1.Name = "button1";
             button1.Size = new Size(628, 79);
             button1.TabIndex = 1;
-            button1.Text = "button1";
+            button1.Text = "증가";
             button1.UseVisualStyleBackColor = true;
             // 
             // labelCount
             // 
-            labelCount.AutoSize = true;
-            labelCount.BackColor = SystemColors.Info;
+            labelCount.BackColor = Color.Black;
+            labelCount.BorderStyle = BorderStyle.Fixed3D;
+            labelCount.Cursor = Cursors.Hand;
             labelCount.Font = new Font("맑은 고딕", 36F, FontStyle.Bold, GraphicsUnit.Point, 129);
-            labelCount.Location = new Point(211, 202);
+            labelCount.ForeColor = Color.Lime;
+            labelCount.Location = new Point(82, 30);
             labelCount.Name = "labelCount";
-            labelCount.Size = new Size(327, 128);
+            labelCount.Size = new Size(628, 401);
             labelCount.TabIndex = 2;
-            labelCount.Text = "label1";
+            labelCount.Text = "0";
             labelCount.TextAlign = ContentAlignment.MiddleCenter;
             labelCount.Click += labelCount_Click;
             // 
@@ -66,7 +68,6 @@
             Load += Form1_Load;
             Click += OnAdd;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
